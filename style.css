@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Titilium;
+  src: url(fonts/TitilliumWeb-ExtraLight.ttf);
+}
+
+.img:not(:hover) {
+  filter: blur(5px);
+}
+
+* {
+  font-family: Titilium;
+}
+
+html {
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: #555;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+span {
+  color: aqua;
+}
